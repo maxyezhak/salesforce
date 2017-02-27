@@ -1,5 +1,5 @@
 - view: _account
-  sql_table_name: looker_salesforce.sf_account
+  sql_table_name: salesforce."sf_Account"
   fields:
 
   # dimensions #
@@ -7,15 +7,15 @@
   - dimension: id
     primary_key: true
     type: string
-    sql: ${TABLE}.id
+    sql: ${TABLE}."Id"
 
   - dimension: account_number
     type: string
-    sql: ${TABLE}.accountnumber
+    sql: ${TABLE}."AccountNumber"
 
   - dimension: annual_revenue
     type: number
-    sql: ${TABLE}.annualrevenue
+    sql: ${TABLE}."AnnualRevenue"
     value_format: '$#,##0'
 
   - dimension: attributes__type
@@ -36,7 +36,7 @@
 
   - dimension: billing_state
     type: string
-    sql: ${TABLE}.billingstate
+    sql: ${TABLE}."BillingState"
 
   - dimension: billing_street
     type: string
@@ -89,7 +89,7 @@
 
   - dimension: number_of_employees
     type: number
-    sql: ${TABLE}.numberofemployees
+    sql: ${TABLE}."NumberOfEmployees"
 
   - dimension: owner_id
     type: string
@@ -135,7 +135,7 @@
     
   - dimension: type
     type: string
-    sql: ${TABLE}.type
+    sql: ${TABLE}."Type"
 
   - dimension: website
     type: string

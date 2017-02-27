@@ -1,6 +1,6 @@
 # preliminaries #
 
-- connection: vandelay_looker_connection  
+- connection: postgres_sf  
 - include: "*.view.lookml"
 - include: "*.dashboard.lookml"
 

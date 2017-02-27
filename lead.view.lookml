@@ -1,5 +1,5 @@
 - view: _lead
-  sql_table_name: looker_salesforce.sf_lead
+  sql_table_name: salesforce."sf_Lead"
   fields:
   
 # dimensions #
@@ -7,62 +7,62 @@
   - dimension: id
     primary_key: true
     type: string
-    sql: ${TABLE}.id
+    sql: ${TABLE}."Id"
 
   - dimension: annual_revenue
     type: number
-    sql: ${TABLE}.annualrevenue
+    sql: ${TABLE}."AnnualRevenue"
 
   - dimension: city
     type: string
-    sql: ${TABLE}.city
+    sql: ${TABLE}."City"
 
   - dimension: company
     type: string
-    sql: ${TABLE}.company
+    sql: ${TABLE}."Company"
 
   - dimension: country
     type: string
-    sql: ${TABLE}.country
+    sql: ${TABLE}."Country"
     
   - dimension: converted_account_id
     type: string
     hidden: true
-    sql: ${TABLE}.convertedaccountid
+    sql: ${TABLE}."ConvertedAccountId"
 
   - dimension: converted_contact_id
     type: string
     hidden: true
-    sql: ${TABLE}.convertedcontactid
+    sql: ${TABLE}."ConvertedContactId"
 
   - dimension_group: converted
     type: time
     timeframes: [date, week, month]
     convert_tz: false
-    sql: ${TABLE}.converteddate
+    sql: ${TABLE}."ConvertedDate"
 
   - dimension: converted_opportunity_id
     type: string
     hidden: true
-    sql: ${TABLE}.convertedopportunityid
+    sql: ${TABLE}."ConvertedOpportunityId"
 
   - dimension: created_by_id
     type: string
     hidden: true
-    sql: ${TABLE}.createdbyid
+    sql: ${TABLE}."CreatedById"
 
   - dimension_group: created
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.createddate
+    sql: ${TABLE}."CreatedDate"
 
   - dimension: description
     type: string
-    sql: ${TABLE}.description
+    sql: ${TABLE}."Description"
 
   - dimension: email
     type: string
-    sql: ${TABLE}.email
+    sql: ${TABLE}."Email"
 
 #   - dimension: fax
 #     type: string
@@ -70,90 +70,90 @@
 
   - dimension: first_name
     type: string
-    sql: ${TABLE}.firstname
+    sql: ${TABLE}."FirstName"
 
   - dimension: industry
     type: string
-    sql: ${TABLE}.industry
+    sql: ${TABLE}."Industry"
 
   - dimension: is_converted
     type: yesno
-    sql: ${TABLE}.isconverted
+    sql: ${TABLE}."IsConverted"
 
   - dimension: is_deleted
     type: yesno
-    sql: ${TABLE}.isdeleted
+    sql: ${TABLE}."IsDeleted"
 
   - dimension: is_unread_by_owner
     type: yesno
-    sql: ${TABLE}.isunreadbyowner
+    sql: ${TABLE}."IsUnreadByOwner"
 
   - dimension: last_modified_by_id
     type: string
-    sql: ${TABLE}.lastmodifiedbyid
+    sql: ${TABLE}."LastModifiedById"
 
   - dimension_group: last_modified
     type: time
     timeframes: [date, week, month]
-    sql: ${TABLE}.lastmodifieddate
+    sql: ${TABLE}."LastModifiedDate"
 
   - dimension: last_name
     type: string
-    sql: ${TABLE}.lastname
+    sql: ${TABLE}."LastName"
 
   - dimension: lead_source
     type: string
-    sql: ${TABLE}.leadsource
+    sql: ${TABLE}."LeadSource"
 
   - dimension: name
     type: string
-    sql: ${TABLE}.name
+    sql: ${TABLE}."Name"
 
   - dimension: number_of_employees
     type: number
-    sql: ${TABLE}.numberofemployees
+    sql: ${TABLE}."NumberOfEmployees"
 
   - dimension: owner_id
     type: string
     hidden: true
-    sql: ${TABLE}.ownerid
+    sql: ${TABLE}."OwnerId"
 
   - dimension: phone
     type: string
-    sql: ${TABLE}.phone
+    sql: ${TABLE}."Phone"
 
   - dimension: postal_code
     type: string
-    sql: ${TABLE}.postalcode
+    sql: ${TABLE}."PostalCode"
 
   - dimension: salutation
     type: string
-    sql: ${TABLE}.salutation
+    sql: ${TABLE}."Salutation"
 
   - dimension: state
     type: string
-    sql: ${TABLE}.state
+    sql: ${TABLE}."State"
 
   - dimension: status
     type: string
-    sql: ${TABLE}.status
+    sql: ${TABLE}."Status"
 
   - dimension: street
     type: string
-    sql: ${TABLE}.street
+    sql: ${TABLE}."Street"
 
   - dimension_group: system_modstamp
     type: time
     timeframes: [date, week, month]
-    sql: ${TABLE}.systemmodstamp
+    sql: ${TABLE}."SystemModStamp"
 
   - dimension: title
     type: string
-    sql: ${TABLE}.title
+    sql: ${TABLE}."Title"
 
   - dimension: website
     type: string
-    sql: ${TABLE}.website
+    sql: ${TABLE}."Website"
 
     
     # measures #

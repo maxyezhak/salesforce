@@ -1,11 +1,11 @@
 - view: _user
-  sql_table_name: looker_salesforce.sf_user
+  sql_table_name: salesforce."sf_User"
   fields:
 
   - dimension: id
     primary_key: true
     type: string
-    sql: ${TABLE}.id
+    sql: ${TABLE}."Id"
 
 #   - dimension: about_me
 #     type: string
@@ -14,27 +14,27 @@
   - dimension: account_id
     type: string
     hidden: true
-    sql: ${TABLE}.accountid
+    sql: ${TABLE}."AccountId"
 
   - dimension: alias
     type: string
-    sql: ${TABLE}.alias
+    sql: ${TABLE}."Alias"
 
   - dimension: badge_text
     type: string
-    sql: ${TABLE}.badgetext
+    sql: ${TABLE}."BadgeText"
 
   - dimension: city
     type: string
-    sql: ${TABLE}.city
+    sql: ${TABLE}."City"
 
   - dimension: community_nickname
     type: string
-    sql: ${TABLE}.communitynickname
+    sql: ${TABLE}."CommunityNickname"
 
   - dimension: company_name
     type: string
-    sql: ${TABLE}.companyname
+    sql: ${TABLE}."CompanyName"
 
   - dimension: country
     type: string
@@ -42,142 +42,142 @@
 
   - dimension: created_by_id
     type: string
-    sql: ${TABLE}.createdbyid
+    sql: ${TABLE}."CreatedById"
 
   - dimension_group: created
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.createddate
+    sql: ${TABLE}."CreatedDate"
 
   - dimension: default_group_notification_frequency
     type: string
-    sql: ${TABLE}.defaultgroupnotificationfrequency
+    sql: ${TABLE}."DefaultGroupNotificationFrequency"
 
   - dimension: digest_frequency
     type: string
-    sql: ${TABLE}.digestfrequency
+    sql: ${TABLE}."DigestFrequency"
 
   - dimension: email
     type: string
-    sql: ${TABLE}.email
+    sql: ${TABLE}."Email"
 
   - dimension: email_encoding_key
     type: string
-    sql: ${TABLE}.emailencodingkey
+    sql: ${TABLE}."EmailEncodingKey"
 
   - dimension: first_name
     type: string
-    sql: ${TABLE}.firstname
+    sql: ${TABLE}."FirstName"
 
   - dimension: forecast_enabled
     type: yesno
-    sql: ${TABLE}.forecastenabled
+    sql: ${TABLE}."ForecastEnabled"
 
   - dimension: is_active
     type: yesno
-    sql: ${TABLE}.isactive
+    sql: ${TABLE}."IsActive"
 
   - dimension: language_locale_key
     type: string
-    sql: ${TABLE}.languagelocalekey
+    sql: ${TABLE}."LanguageLocaleKey"
 
   - dimension_group: last_login
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.lastlogindate
+    sql: ${TABLE}."LastLoginDate"
 
   - dimension: last_modified_by_id
     type: string
-    sql: ${TABLE}.lastmodifiedbyid
+    sql: ${TABLE}."LastModifiedById"
 
   - dimension_group: last_modified
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.lastmodifieddate
+    sql: ${TABLE}."LastModifiedDate"
 
   - dimension: last_name
     type: string
-    sql: ${TABLE}.lastname
+    sql: ${TABLE}."LastName"
 
   - dimension_group: last_password_change
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.lastpasswordchangedate
+    sql: ${TABLE}."LastPasswordChangeDate"
 
   - dimension_group: last_referenced
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.lastreferenceddate
+    sql: ${TABLE}."LastReferencedDate"
 
   - dimension_group: last_viewed
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.lastvieweddate
+    sql: ${TABLE}."LastViewedDate"
 
   - dimension: locale_sid_key
     type: string
-    sql: ${TABLE}.localesidkey
+    sql: ${TABLE}."LocaleSidKey"
 
   - dimension: mobile_phone
     type: string
-    sql: ${TABLE}.mobilephone
+    sql: ${TABLE}."MobilePhone"
 
   - dimension: name
     type: string
-    sql: ${TABLE}.name
+    sql: ${TABLE}."Name"
 
   - dimension: phone
     type: string
-    sql: ${TABLE}.phone
+    sql: ${TABLE}."Phone"
     
   - dimension: postal_code
     type: string
-    sql: ${TABLE}.postalcode
+    sql: ${TABLE}."PostalCode"
 
   - dimension: profile_id
     type: string
-    sql: ${TABLE}.profileid
+    sql: ${TABLE}."ProfileId"
 
   - dimension: receives_admin_info_emails
     type: yesno
-    sql: ${TABLE}.receivesadmininfoemails
+    sql: ${TABLE}."ReceivesAdminInfoEmails"
 
   - dimension: receives_info_emails
     type: yesno
-    sql: ${TABLE}.receivesinfoemails
+    sql: ${TABLE}."ReceivesInfoEmails"
 
   - dimension: state
     type: string
-    sql: ${TABLE}.state
+    sql: ${TABLE}."State"
 
   - dimension: street
     type: string
-    sql: ${TABLE}.street
+    sql: ${TABLE}."Street"
 
   - dimension_group: system_modstamp
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.systemmodstamp
+    sql: ${TABLE}."SystemModStamp"
 
   - dimension: time_zone_sid_key
     type: string
-    sql: ${TABLE}.timezonesidkey
+    sql: ${TABLE}."TimezoneSidKey"
 
   - dimension: username
     type: string
-    sql: ${TABLE}.username
+    sql: ${TABLE}."Username"
 
   - dimension: title
     type: string
-    sql: ${TABLE}.title
+    sql: ${TABLE}."Title"
 
   - dimension: user_role_id
     type: string
-    sql: ${TABLE}.userroleid
+    sql: ${TABLE}."UserRoleId"
 
   - dimension: user_type
     type: string
-    sql: ${TABLE}.usertype
+    sql: ${TABLE}."UserType"
 
 
 # measures #

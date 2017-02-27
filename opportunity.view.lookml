@@ -1,5 +1,5 @@
 - view: _opportunity
-  sql_table_name: looker_salesforce.sf_opportunity
+  sql_table_name: salesforce."sf_Opportunity"
   fields:
   
 # dimensions #
@@ -7,118 +7,118 @@
   - dimension: id
     primary_key: true
     type: string
-    sql: ${TABLE}.id
+    sql: ${TABLE}."Id"
 
   - dimension: account_id
     type: string
-    sql: ${TABLE}.accountid
+    sql: ${TABLE}."AccountId"
 
   - dimension: amount
     type: number
-    sql: ${TABLE}.amount
+    sql: ${TABLE}."Amount"
     
   - dimension: campaign_id
     type: string
     hidden: true
-    sql: ${TABLE}.campaign_id
+    sql: ${TABLE}."CampaignId"
 
   - dimension_group: close
     type: time
     timeframes: [date, week, month]
     convert_tz: false
-    sql: ${TABLE}.closedate
+    sql: ${TABLE}."CloseDate"
 
   - dimension: created_by_id
     type: string
-    sql: ${TABLE}.createdbyid
+    sql: ${TABLE}."CreatedById"
 
   - dimension_group: created
     type: time
     timeframes: [date, week, month]
-    sql: ${TABLE}.createddate
+    sql: ${TABLE}."CreatedDate"
 
   - dimension: description
     type: string
-    sql: ${TABLE}.description
+    sql: ${TABLE}."Description"
 
   - dimension: fiscal
     type: string
-    sql: ${TABLE}.fiscal
+    sql: ${TABLE}."Fiscal"
 
   - dimension: fiscal_quarter
     type: number
-    sql: ${TABLE}.fiscalquarter
+    sql: ${TABLE}."FiscalQuarter"
 
   - dimension: fiscal_year
     type: number
-    sql: ${TABLE}.fiscalyear
+    sql: ${TABLE}."FiscalYear"
 
   - dimension: forecast_category
     type: string
-    sql: ${TABLE}.forecastcategory
+    sql: ${TABLE}."ForecastCategory"
 
   - dimension: forecast_category_name
     type: string
-    sql: ${TABLE}.forecastcategoryname
+    sql: ${TABLE}."ForecastCategoryName"
 
   - dimension: has_opportunity_line_item
     type: yesno
-    sql: ${TABLE}.hasopportunitylineitem
+    sql: ${TABLE}."HasOpportunityLineItem"
 
   - dimension: is_closed
     type: yesno
-    sql: ${TABLE}.isclosed
+    sql: ${TABLE}."IsClosed"
 
   - dimension: is_deleted
     type: yesno
-    sql: ${TABLE}.isdeleted
+    sql: ${TABLE}."IsDeleted"
 
   - dimension: is_private
     type: yesno
     hidden: true
-    sql: ${TABLE}.isprivate
+    sql: ${TABLE}."IsPrivate"
 
   - dimension: is_won
     type: yesno
-    sql: ${TABLE}.iswon
+    sql: ${TABLE}."IsWon"
 
   - dimension: last_modified_by_id
     type: string
-    sql: ${TABLE}.lastmodifiedbyid
+    sql: ${TABLE}."LastmodiFiedById"
 
   - dimension_group: last_modified
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.lastmodifieddate
+    sql: ${TABLE}."LastModifiedDate"
 
   - dimension: lead_source
     type: string
-    sql: ${TABLE}.leadsource
+    sql: ${TABLE}."LeadSource"
 
   - dimension: name
     type: string
-    sql: ${TABLE}.name
+    sql: ${TABLE}."Name"
 
   - dimension: owner_id
     type: string
-    sql: ${TABLE}.ownerid
+    sql: ${TABLE}."OwnerId"
 
   - dimension: probability
     type: number
-    sql: ${TABLE}.probability
+    sql: ${TABLE}."Probability"
 
   - dimension: stage_name
     type: string
-    sql: ${TABLE}.stagename
+    sql: ${TABLE}."StageName"
 
   - dimension_group: system_modstamp
     type: time
     timeframes: [time, date, week, month]
-    sql: ${TABLE}.systemmodstamp
+    sql: ${TABLE}."SystemModStamp"
 
   - dimension: type
     type: string
-    sql: ${TABLE}.type
+    sql: ${TABLE}."Type"
 
 # measures #
 
